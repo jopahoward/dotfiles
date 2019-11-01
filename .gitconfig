@@ -1,0 +1,5 @@
+[user]
+	email = jphow@umich.edu
+	name = Joseph Howard
+[commit]
+  template = ~/.gitmessage
