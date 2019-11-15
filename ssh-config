@@ -4,3 +4,6 @@ Host caen
 	User jphow
 	Compression yes
 	ForwardX11 yes
+	ControlMaster auto
+	ControlPath ~/.ssh/master-%r@%h:%p
+	ControlPersist 5m
