@@ -1,0 +1,6 @@
+# CAEN
+Host caen
+	HostName login.engin.umich.edu
+	User jphow
+	Compression yes
+	ForwardX11 yes

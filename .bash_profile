@@ -1,4 +1,4 @@
-export VISUAL=/usr/bin/vim.basic
+export VISUAL=vim
 export EDITOR="$VISUAL"
 
 # if running bash
