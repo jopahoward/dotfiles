@@ -23,3 +23,4 @@ rm -f "$HOME/.vimrc" ; ln -s "$PWD/.vimrc" "$HOME/.vimrc"
 
 # ssh-config
 mkdir -p "$HOME/.ssh" ; rm -f "$HOME/.ssh/config" ; ln -s "$PWD/ssh-config" "$HOME/.ssh/config"
+chmod 600 "$HOME/.ssh/config" ; chown $USER "$HOME/.ssh/config"
