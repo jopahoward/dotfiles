@@ -21,5 +21,5 @@ rm -f "$HOME/.gitmessage" ; ln -s "$PWD/.gitmessage" "$HOME/.gitmessage"
 # Vim config file
 rm -f "$HOME/.vimrc" ; ln -s "$PWD/.vimrc" "$HOME/.vimrc"
 
-# SSH-config
+# ssh-config
 mkdir -p "$HOME/.ssh" ; rm -f "$HOME/.ssh/config" ; ln -s "$PWD/ssh-config" "$HOME/.ssh/config"
