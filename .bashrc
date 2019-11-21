@@ -115,3 +115,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+if grep -i "Microsoft\|WSL" /proc/version >/dev/null ; then
+	LS_COLORS="$LS_COLORS:ow=1;95:"; export LS_COLORS
+fi
