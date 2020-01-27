@@ -17,6 +17,7 @@ Host pi
 Host aws
 	HostName ec2-18-224-45-96.us-east-2.compute.amazonaws.com
 	User ubuntu
+	IdentityFile ~/.ssh/jphow-aws-instance.pem
 	Compression yes
 	ControlMaster auto
 	ControlPath ~/.ssh/master-%r@%h:%p
