@@ -14,3 +14,10 @@ Host pi
 	ControlMaster auto
 	ControlPath ~/.ssh/master-%r@%h:%p
 	ControlPersist 5m
+Host aws
+	HostName ec2-18-224-45-96.us-east-2.compute.amazonaws.com
+	User ubuntu
+	Compression yes
+	ControlMaster auto
+	ControlPath ~/.ssh/master-%r@%h:%p
+	ControlPersist 5m
