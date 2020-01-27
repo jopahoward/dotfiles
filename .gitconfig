@@ -3,3 +3,5 @@
 	name = Joseph Howard
 [commit]
   template = ~/.gitmessage
+[alias]
+	st = status
