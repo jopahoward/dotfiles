@@ -115,6 +115,9 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# If using WSL, fix gross link formatting and change to home directory
 if grep -i "Microsoft\|WSL" /proc/version >/dev/null ; then
 	LS_COLORS="$LS_COLORS:ow=1;95:"; export LS_COLORS
+	cd "$HOME"
 fi
