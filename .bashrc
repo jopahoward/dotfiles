@@ -117,7 +117,9 @@ if ! shopt -oq posix; then
 fi
 
 # If using WSL, fix gross link formatting and change to home directory
+# Also, use VcXsrv display server
 if grep -i "Microsoft\|WSL" /proc/version >/dev/null ; then
 	LS_COLORS="$LS_COLORS:ow=1;95:"; export LS_COLORS
 	cd "$HOME"
+	export DISPLAY=172.24.208.1:0
 fi
