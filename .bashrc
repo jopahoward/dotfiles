@@ -127,4 +127,5 @@ if grep -i "Microsoft\|WSL" /proc/version >/dev/null ; then
 	
 	# Set DISPLAY
 	export DISPLAY="$nameserv:0"
+	unset nameserv
 fi
