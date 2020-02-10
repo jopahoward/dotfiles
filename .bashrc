@@ -121,5 +121,10 @@ fi
 if grep -i "Microsoft\|WSL" /proc/version >/dev/null ; then
 	LS_COLORS="$LS_COLORS:ow=1;95:"; export LS_COLORS
 	cd "$HOME"
-	export DISPLAY=172.24.208.1:0
+	# Find nameserver
+	nameserv=$(grep "nameserver" /etc/resolv.conf)
+	nameserv=${nameserv#"nameserver "}
+	
+	# Set DISPLAY
+	export DISPLAY="$nameserv:0"
 fi
