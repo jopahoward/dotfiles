@@ -23,4 +23,7 @@ chmod 600 "$HOME/.ssh/config" ; chown $USER "$HOME/.ssh/config"
 # SQlite config file
 rm -f "$HOME/.sqliterc" ; ln -s "$PWD/.sqliterc" "$HOME/.sqliterc"
 
+# tmux config file
+rm -f "$HOME/.tmux.conf" ; ln -s "$PWD/.tmux.conf" "$HOME/.tmux.conf" 
 cd "$CWD"
+unset CWD
