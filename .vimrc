@@ -8,9 +8,9 @@ filetype plugin indent on
 set nu
 colorscheme koehler
 
-set nowrap			" No text wrapping
-set tabstop=2 shiftwidth=2	" Tabs are size 2
-set backspace=indent,eol,start	" Backspace through everything
+set nowrap          " No text wrapping
+set tabstop=4 shiftwidth=4 expandtab    " Tab inserts 4 spaces
+set backspace=indent,eol,start  " Backspace through everything
 
 set hlsearch
 set incsearch
