@@ -8,7 +8,7 @@ Host caen
 	ControlPath ~/.ssh/master-%r@%h:%p
 	ControlPersist 5m
 Host pi
-	HostName 192.168.1.11
+	HostName 10.0.0.250
 	User pi
 	Compression yes
 	ControlMaster auto
