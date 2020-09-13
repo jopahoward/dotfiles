@@ -18,3 +18,9 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
+
+# if in caen
+if ( lsb_release -is | grep "RedHatEnterpriseServer" >/dev/null ) ; then
+    # Set gcc version 7.1.0 (EECS 482)
+    module load gcc/7.1.0
+fi
