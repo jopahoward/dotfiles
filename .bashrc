@@ -121,6 +121,8 @@ fi
 if grep -i "Microsoft\|WSL" /proc/version >/dev/null ; then
 	LS_COLORS="$LS_COLORS:ow=1;95:"; export LS_COLORS
 	cd "$HOME"
+    # Only show three levels for working directory
+    PROMPT_DIRTRIM=3
 	# Find nameserver
 	nameserv=$(grep "nameserver" /etc/resolv.conf)
 	nameserv=${nameserv#"nameserver "}
