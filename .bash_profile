@@ -19,6 +19,11 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
+# set PATH so it includes Go if it exists
+if [ -d "/usr/local/go/bin" ] ; then
+    export PATH=$PATH:/usr/local/go/bin
+fi
+
 # if in caen
 if ( lsb_release -is | grep "RedHatEnterpriseServer" >/dev/null ) ; then
     # Set gcc version 7.1.0 (EECS 482)
