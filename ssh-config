@@ -23,10 +23,10 @@ Host aws
 	ControlPath ~/.ssh/master-%r@%h:%p
 	ControlPersist 5m
 Host athena.local
-    HostName 10.0.0.12
-    User joseph
-    IdentityFile ~/.ssh/id_ed25519
-    Compression yes
-    ControlMaster auto
-    ControlPath ~/.ssh/master-%r@%h:%p
-    ControlPersist 5m
+	HostName 10.0.0.12
+	User joseph
+	IdentityFile ~/.ssh/id_ed25519
+	Compression yes
+	ControlMaster auto
+	ControlPath ~/.ssh/master-%r@%h:%p
+	ControlPersist 5m
