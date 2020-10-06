@@ -117,10 +117,9 @@ if ! shopt -oq posix; then
 fi
 
 # If using WSL, fix gross link formatting and set DISPLAY for VcXsrv
-# Also, switch to home directory when starting a session
 if grep -i "Microsoft\|WSL" /proc/version >/dev/null ; then
 	LS_COLORS="$LS_COLORS:ow=1;95:"; export LS_COLORS
-	cd "$HOME"
+	# cd "$HOME"
     # Only show three levels for working directory
     PROMPT_DIRTRIM=3
 	# Find nameserver
