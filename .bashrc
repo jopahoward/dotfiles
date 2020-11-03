@@ -47,12 +47,12 @@ force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
-	# We have color support; assume it's compliant with Ecma-48
-	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
-	# a case would tend to support setf rather than setaf.)
-	color_prompt=yes
+    # We have color support; assume it's compliant with Ecma-48
+    # (ISO/IEC-6429). (Lack of such support is extremely rare, and such
+    # a case would tend to support setf rather than setaf.)
+    color_prompt=yes
     else
-	color_prompt=
+    color_prompt=
     fi
 fi
 
@@ -118,15 +118,15 @@ fi
 
 # If using WSL, fix gross link formatting and set DISPLAY for VcXsrv
 if grep -i "Microsoft\|WSL" /proc/version >/dev/null ; then
-	LS_COLORS="$LS_COLORS:ow=1;95:"; export LS_COLORS
-	# cd "$HOME"
+    LS_COLORS="$LS_COLORS:ow=1;95:"; export LS_COLORS
+    # cd "$HOME"
     # Only show three levels for working directory
     PROMPT_DIRTRIM=3
-	# Find nameserver
-	nameserv=$(grep "nameserver" /etc/resolv.conf)
-	nameserv=${nameserv#"nameserver "}
-	
-	# Set DISPLAY
-	export DISPLAY="$nameserv:0"
-	unset nameserv
+    # Find nameserver
+    nameserv=$(grep "nameserver" /etc/resolv.conf)
+    nameserv=${nameserv#"nameserver "}
+    
+    # Set DISPLAY
+    export DISPLAY="$nameserv:0"
+    unset nameserv
 fi
