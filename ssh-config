@@ -7,8 +7,8 @@ Host caen
 	ControlMaster auto
 	ControlPath ~/.ssh/master-%r@%h:%p
 	ControlPersist 5m
-Host pi.local
-	HostName 10.0.0.250
+Host pi
+	HostName pi.hole
 	User pi
 	Compression yes
 	ControlMaster auto
@@ -22,7 +22,7 @@ Host aws
 	ControlMaster auto
 	ControlPath ~/.ssh/master-%r@%h:%p
 	ControlPersist 5m
-Host athena.local
+Host athena
 	HostName 10.0.0.12
 	User joseph
 	IdentityFile ~/.ssh/id_ed25519
